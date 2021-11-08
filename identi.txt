@@ -1,0 +1,43 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<cstring>
+using namespace std;
+int main()
+{
+   char str[10];
+
+    cin.getline(str,10);
+    int c=0,ok;
+    if((str[0]>='a' && str[0]<='z' )||( str[0]>='A' && str[0]<='Z') ||(str[0]=='_'))
+    {
+        for(int i=0;i<strlen(str);i++)
+
+        {
+            if((str[i]>='a' && str[i]<='z' )|| (str[i]>='A' && str[i]<='Z' )||(str[i]=='_') ||(str[i]>='0' && str[i]<='9'))
+            {
+                c++;
+            }
+
+        }
+        if(c==strlen(str))
+    {
+        ok=0;
+    }
+    }
+
+    else
+    {
+        ok=1;
+    }
+
+
+    if(ok==0)
+    {
+        cout<<"identifier"<<endl;
+
+    }
+    else
+    {
+        cout<<"not it"<<endl;
+    }
+}
